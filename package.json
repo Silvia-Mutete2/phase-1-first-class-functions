@@ -4,7 +4,7 @@
   "description": "Practice writing and using first-class functions in JavaScript on Learn",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json --bail"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
     "mocha": "5.2.0",
     "mocha-jsdom": "~1.1.0",
     "mocha-multi": "1.0.1"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.3"
   }
 }
