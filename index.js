@@ -1,15 +1,16 @@
+//arrow functions
+//const add=(parameter1,parameter2)=>parameter1+parameter2
 
-function receivesAFunction(callback) {
-    return callback();
-}
+const receivesAFunction=(callback)=>callback();
+    
+function returnsANamedFunction(){
+    return function namedFunction(){
+    console.log ('named function')
+    } 
+ }
 
-const namedFunction = returnsANamedFunction();
-namedFunction();
-
-
-
-returnsAnAnonymousFunction(() => {
-    console.log("returns an anonymous function");
-  });
-  
-  
+ function returnsAnAnonymousFunction(){
+     return function (){
+         console.log ("anonymous function")
+     }
+ }
